@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lughx</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="profile.css" />
+  <link rel="stylesheet" href="intro.css" />
+  <script src="profile.js" defer></script>
+</head>
+<body>
+  <div id="intro">
+    <div class="logo">Welcome to Profile of Lughx</div>
+  </div>
+
+<nav class="navbar">
+  <a href="#" class="logo">
+    <img src="LogoLugh.png" alt="Logo" class="logo-img">
+    Lughx
+  </a>
+  <ul>
+    <li onclick="scrollHome()">
+      <a href="#">
+        <i class="fas fa-home"></i>
+        <span class="nav-text">Home</span>
+      </a>
+    </li>
+    <li onclick="scrollSkill()">
+      <a href="#">
+        <i class="fa-solid fa-code"></i>
+        <span class="nav-text">Skill</span>
+      </a>
+    </li>
+    <li onclick="scrollContact()">
+      <a href="#">
+        <i class="fas fa-envelope"></i>
+        <span class="nav-text">Contact</span>
+      </a>
+    </li>
+    <li>
+      <a href="idx2.html">
+        <i class="fas fa-music"></i>
+        <span class="nav-text">My Music</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+  <section class="home">
+    <div class="home-info">
+      <h1>Hi, I'm Lughx</h1>
+      <h2>
+        I'm a
+        <span style="--i:4;" data-text="Frontend Developer">Frontend Developer</span>
+        <span style="--i:3;" data-text="Tiktoker">Tiktoker</span>
+        <span style="--i:2;" data-text="Tricker Facebook">Tricker Facebook</span>
+        <span style="--i:1;" data-text="UI/UX Designer">UI/UX Designer</span>
+      </h2>
+      <p>Tôi là một Frontend Developer đam mê tạo ra những trải nghiệm web mượt mà và hấp dẫn. Với kỹ năng trong HTML, CSS và JavaScript, tôi luôn tìm cách biến ý tưởng thành hiện thực. Tôi chú trọng đến thiết kế responsive để trang web hoạt động tốt trên mọi thiết bị. Sự sáng tạo và tinh thần học hỏi không ngừng giúp tôi phát triển từng ngày.</p>
+
+    <div class="btn-sci">
+      <a href="#" class="btn" onclick="showToast('Dev By Lughx')">Ấn Điii Bro!</a>
+      <div class="sci">
+        <a href="https://www.tiktok.com/@zbim08"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100058165548034"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@Lughx08"><i class="fab fa-youtube"></i></a>
+      </div>
+</div>
+
+    </div>
+
+    <div class="home-img">
+      <div class="img-box">
+        <div class="img-item">
+          <div class="light"></div>
+          <img src="home.png" alt="Profile image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skill">
+    <h2>Skill</h2>
+    <p>Thành thạo: HTML, CSS, JavaScript, ReactJS, UI/UX design...</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: lughx@example.com</p>
+    <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100058165548034">Lughx</a></p>
+  </section>
+
+  <div id="custom-alert" class="custom-alert">
+  <div class="custom-alert-content">
+    <span class="close-btn" onclick="closeAlert()">&times;</span>
+    <p>Dev By Lughx</p>
+  </div>
+</div>
+<div id="toast-container"></div>
+
+<audio id="pop-sound" src="pop.mp3" preload="auto"></audio>
+
+</body>
+</html>
